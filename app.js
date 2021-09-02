@@ -1,9 +1,10 @@
+require("dotenv").config();
 const Express = require("express");
 const app = Express();
 const dbConnection = require("./db");
 
-require("dotenv").config();
-app.use(Express.json());
+
+/*app.use(Express.json());
 
 app.use(require('./middleware/headers'));
 
