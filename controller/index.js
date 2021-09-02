@@ -1,5 +1,8 @@
-/*module.exports = {
-    userController: require('./userController.js'),
-    gameController: require("./gameController.js"),
+module.exports = {
+    userController: require('./userController'),
+    gameController: require("./gameController"),
 };
-*/
+
+
+
+
