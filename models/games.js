@@ -1,3 +1,4 @@
+
 const {DataTypes} = require('sequelize');
 const db = require('../db');
 const Game = db.define('game', {
@@ -24,3 +25,4 @@ const Game = db.define('game', {
 
 
 module.exports = Game
+>>>>>>> develop

@@ -1,7 +1,6 @@
-const Express = require('express');
+const Express = require("express");
 const router = Express.Router();
 //const validateJWT = require("../middleware/validate-jwt");
-
 const {GameModel} = require('../models');
 /*
 router.post("/", validateJWT,async(req, res) =>{ 
