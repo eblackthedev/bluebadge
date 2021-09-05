@@ -1,3 +1,9 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize("postgres://postgres:4dcfdd579ccd43a78e44935f84527e55@localhost:5432/dadjokes")
+
+const sequelize = new Sequelize("postgres://postgres:1e0df3e201a84c4ead78b1036ae43735@localhost:5432/Bluebadge");
+
+
+
+
+
 module.exports = sequelize;
