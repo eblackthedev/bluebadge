@@ -31,7 +31,7 @@ router.delete("/:id", async(req, res) =>{
     })
     
     router.post("/register", async(req, res) =>{
-    const {username, email, password} = req.body.user; //username
+    const {username, email, password} = req.body; //username
     //console.log("register", req)
 
         try{
@@ -64,7 +64,7 @@ router.delete("/:id", async(req, res) =>{
     
     router.post("/login", async(req, res) =>{
     //res.send("login called")
-    const {email, password } = req.body.user;
+    const {email, password } = req.body;
     
         try{
         const loginUser = await UserModel.findOne({

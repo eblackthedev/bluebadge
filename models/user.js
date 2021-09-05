@@ -17,16 +17,8 @@ const User = db.define("user", {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
-    require: true,
-  },
-  name: {
-    require: true,
-    allowNull: false,
-    type: DataTypes.STRING,
-  },
-  bio: {
-    type: DataTypes.TEXT,
-  },
+    require: true
+  }
 });
 
 module.exports = User;
