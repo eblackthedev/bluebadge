@@ -3,17 +3,23 @@ const Express = require("express");
 const app = Express();
 const dbConnection = require("./db");
 
-app.use(Express.json());
+
+
+ app.use(Express.json());
+
+
 
 app.use(require("./middleware/header"));
 
 
-app.use(require('./middleware/header'));
 
 const controller = require("./controller");
-
-
 app.use("/user", controller.userController);
+
+
+
+
+
 
 //app.use(require("./middleware/validate-jwt"));
 app.use("/game", controller.gameController);
@@ -22,7 +28,6 @@ app.use("/game", controller.gameController);
 dbConnection.authenticate()
 .then(() => dbConnection.sync()) //force true is how to drop tables
 .then(() => {
->>>>>>> develop
     app.listen(4000, () => {
       console.log(`[Server]: App is listening on 4000.`);
     });
