@@ -21,7 +21,7 @@ app.use("/user", controller.userController);
 
 
 
-//app.use(require("./middleware/validate-jwt"));
+
 app.use("/game", controller.gameController);
 
 
