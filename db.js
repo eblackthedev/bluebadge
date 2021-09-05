@@ -6,3 +6,4 @@ const sequelize = new Sequelize("postgres://postgres:4dcfdd579ccd43a78e44935f845
 
 
 module.exports = sequelize;
+
